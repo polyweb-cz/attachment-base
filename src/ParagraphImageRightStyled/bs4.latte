@@ -1,0 +1,22 @@
+{var $data = $values->{"polyweb-cz/base/ParagraphImageRightStyled"}}
+
+{varType App\Modules\Cms\Entity\CmsImage $extensionData}
+{var $extensionData = $extension->getData('ImgId')[0]}
+
+<div class="paragraphImageRightStyled" data-extension-name="SinglePicture"
+     style="background-image: url('{$pathToRoot}{$extensionData->getThumbnail(0)->getFilePath()}');">
+    <div class="paragraphImageRightStyled_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="paragraphImageRightStyled_spacer">&nbsp;</div>
+                <div class="paragraphImageRightStyled_inner v-align-middle">
+                    <h3 n:editable n:varname="headingText">{$text}</h3>
+                    <p n:editable n:varname="mainTxt">{$text}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{$extensionInput}
+{$optionsInput}

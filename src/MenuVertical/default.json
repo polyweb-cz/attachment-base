@@ -1,0 +1,83 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "MenuVertical",
+  "extension": "Menu",
+  "labelList": [
+    "Test"
+  ],
+  "translations": {
+    "header": "Nadpis první úrovně"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+        {
+          "varName": "header",
+          "elementType": "Heading",
+          "defaults": {
+            "text": "Toto je váš první nadpis"
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "menuVerticalBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "menuVerticalBlockBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "menuVerticalHeadingColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "menuVerticalHeadingFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "menuVerticalHeadingSize",
+      "defaultValue": "13",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "menuVerticalNavItemColor",
+      "defaultValue": "#007BFF",
+      "type": "color"
+    },
+    {
+      "keyName": "menuVerticalNavItemFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "menuVerticalNavItemSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "menuVerticalNavItemBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    }
+  ]
+}
+

@@ -1,0 +1,241 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": true,
+	"lockedAt": 1627285403,
+  "attachmentName": "BoxIconsTextRight3OnRow",
+  "labelList": [
+    "Box"
+  ],
+  "translations": {
+    "boxStrong": "Zvýrazněný text",
+    "boxPerex": "Text pod zvýrazneným textem",
+    "boxIcon": "Ikona",
+    "boxLink": "Odkaz"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+      ]
+    ],
+    "boxGroup": [
+      [
+        {
+          "elementType": "Link",
+          "varName": "boxLink",
+          "defaults": {
+            "href": "https://google.com",
+            "css": "",
+            "title": "Navštívit Google"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxStrong",
+          "defaults": {
+            "text": "Chytré řešení"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxPerex",
+          "defaults": {
+            "text": "které si zamilujete"
+          }
+        },
+        {
+          "elementType": "IconButton",
+          "varName": "boxIcon",
+          "defaults": {
+            "class": "fab fa-pushed",
+            "text": ""
+          }
+        }
+      ],
+      [
+        {
+          "elementType": "Link",
+          "varName": "boxLink",
+          "defaults": {
+            "href": "https://google.com",
+            "css": "",
+            "title": "Navštívit Google"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxStrong",
+          "defaults": {
+            "text": "Výrazné služby"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxPerex",
+          "defaults": {
+            "text": "které nepřehlédnete"
+          }
+        },
+        {
+          "elementType": "IconButton",
+          "varName": "boxIcon",
+          "defaults": {
+            "class": "fas fa-highlighter",
+            "text": ""
+          }
+        }
+      ],
+      [
+        {
+          "elementType": "Link",
+          "varName": "boxLink",
+          "defaults": {
+            "href": "https://google.com",
+            "css": "",
+            "title": "Navštívit Google"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxStrong",
+          "defaults": {
+            "text": "Pro všechny"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxPerex",
+          "defaults": {
+            "text": "ke snadnému použití"
+          }
+        },
+        {
+          "elementType": "IconButton",
+          "varName": "boxIcon",
+          "defaults": {
+            "class": "fa fa-users",
+            "text": ""
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "boxIconsTextRight3OnRowBodyBackground",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowBodyBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowBodyBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowBodyBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowBlockBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowBlockBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowBlockBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowBlockBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowHeadingsColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowHeadingsFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowHeadingsFontSize",
+      "defaultValue": "21",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowTextColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowTextFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowTextFontSize",
+      "defaultValue": "21",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowIconBackgroundColor",
+      "defaultValue": "#E9E9E9",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowIconBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowIconBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowIconBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowIconColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextRight3OnRowIconSize",
+      "defaultValue": "40",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

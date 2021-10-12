@@ -1,0 +1,47 @@
+& {
+
+
+  background: @paragraphImageLeftWithHeadingBodyBackgroundColor;
+
+
+  display: flex;
+
+  .row.paragraphImageLeftWithHeading {
+    flex-direction: row-reverse;
+    padding: 0 1em;
+
+    > div {
+      background: @paragraphImageLeftWithHeadingBlockBackgroundColor;
+      padding: 2em;
+
+      &.v-align-middle {
+        padding: 0;
+      }
+
+      h3 {
+        color: @paragraphImageLeftWithHeadingHeadingColor;
+        font-family: @paragraphImageLeftWithHeadingHeadingFont;
+        font-size: @paragraphImageLeftWithHeadingHeadingSize;
+      }
+
+      p {
+        color: @paragraphImageLeftWithHeadingTextColor;
+        font-family: @paragraphImageLeftWithHeadingTextFont;
+        font-size: @paragraphImageLeftWithHeadingTextSize;
+
+        strong {
+          color: @paragraphImageLeftWithHeadingSubHeadingColor;
+          font-family: @paragraphImageLeftWithHeadingSubHeadingFont;
+          font-size: @paragraphImageLeftWithHeadingSubHeadingSize;
+        }
+      }
+
+      picture {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+

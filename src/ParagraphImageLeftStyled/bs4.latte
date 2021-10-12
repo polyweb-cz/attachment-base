@@ -1,0 +1,24 @@
+{var $data = $values->{"polyweb-cz/base/ParagraphImageLeftStyled"}}
+
+{varType App\Modules\Cms\Entity\CmsImage $extensionData}
+{var $extensionData = $extension->getData('ImgId')[0]}
+
+<div class="paragraphImageLeftStyled" data-extension-name="SinglePicture">
+    <div class="paragraphImageLeftStyled_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 paragraph-image">
+                    <img class="img-fluid" src="{$pathToRoot}{$extensionData->getThumbnail(0)->getFilePath()}">
+                    <div class="paragraph-splitter"></div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 paragraph-text">
+                    <h3 n:editable n:varname="heading">{$text}</h3>
+                    <p n:editable n:varname="perex">{$text}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{$extensionInput}
+{$optionsInput}

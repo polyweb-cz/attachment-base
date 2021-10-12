@@ -1,0 +1,86 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 1627285403,
+  "attachmentName": "ParagraphImageRightStyled",
+  "extension": "SinglePicture",
+  "labelList": [
+    "Paragraph"
+  ],
+  "translations": {
+    "heading": "Nadpis třetí úrovně - h3",
+    "perex": "Odstavec"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+        {
+          "varName": "headingText",
+          "elementType": "Heading",
+          "defaults": {
+            "text": "Lorem Ipsum"
+          }
+        },
+        {
+          "varName": "mainTxt",
+          "elementType": "Paragraph",
+          "defaults": {
+            "text": "Distinctively network future-proof internal or \"organic\" sources via multidisciplinary products. Credibly enable reliable collaboration and idea-sharing via installed base solutions. "
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "paragraphImageRightStyledBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightStyledBlockBackgroundColor",
+      "defaultValue": "#EDEDED",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightStyledHeadingColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightStyledHeadingFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageRightStyledHeadingSize",
+      "defaultValue": "40",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "paragraphImageRightStyledTextColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightStyledTextFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageRightStyledTextSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

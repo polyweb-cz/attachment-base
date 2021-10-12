@@ -1,0 +1,172 @@
+& {
+  background: @realtyEnergyCardBodyBackgroundColor;
+  display: flex;
+
+  .row {
+    margin: 0;
+    width: 100%;
+    background: @realtyEnergyCardBlockBackgroundColor;
+
+    > div {
+      .energy {
+        clear: both;
+        text-align: left;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 0 5px 0;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 0 0 10px;
+        float: left;
+        width: 100px;
+        font-family: @realtyEnergyCardTextFont;
+        font-size: @realtyEnergyCardTextSize;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+          content: "";
+          //float: left;
+          display: inline-block;
+          background: @realtyEnergyCardBlockBackgroundColor;
+          margin: 0;
+          border-bottom: 20px solid transparent;
+          border-top: 20px solid transparent;
+          border-left: 20px solid green;
+          border-right: 20px solid transparent;
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      .energy_a {
+        width: calc(50%);
+        background: rgb(0, 166, 81);
+
+        &::after {
+          border-left: 20px solid rgb(0, 166, 81);
+        }
+      }
+
+      .energy_b {
+        width: calc(50% + (1 * 7%));
+        background: rgb(81, 184, 72);
+
+        &::after {
+          border-left: 20px solid rgb(81, 184, 72);
+        }
+      }
+
+
+      .energy_c {
+        width: calc(50% + (2 * 7%));
+        background: rgb(191, 215, 48);
+
+        &::after {
+          border-left: 20px solid rgb(191, 215, 48);
+        }
+      }
+
+      .energy_d {
+        width: calc(50% + (3 * 7%));
+        background: rgb(255, 242, 0);
+
+        &::after {
+          border-left: 20px solid rgb(255, 242, 0);
+        }
+
+
+      }
+
+      .energy_e {
+        width: calc(50% + (4 * 7%));
+        background: rgb(253, 185, 19);
+
+        &::after {
+          border-left: 20px solid rgb(253, 185, 19);
+        }
+
+      }
+
+      .energy_f {
+        width: calc(50% + (5 * 7%));
+        background: rgb(243, 112, 33);
+
+        &::after {
+          border-left: 20px solid rgb(243, 112, 33);
+        }
+      }
+
+
+      .energy_g {
+        width: calc(50% + (6 * 7%));
+        background: rgb(237, 28, 36);
+
+        &::after {
+          border-left: 20px solid rgb(237, 28, 36);
+        }
+      }
+
+      .sel_ener {
+        position: absolute;
+        background: @realtyEnergyCardArrowBackgroundColor;
+        color: @realtyEnergyCardTextColor;
+        font-family: @realtyEnergyCardTextFont;
+        font-size: @realtyEnergyCardTextSize;
+        height: 40px;
+        line-height: 40px;
+        width: 50%;
+        font-weight: bold;
+        text-align: center;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          background: transparent;
+          margin: 0;
+          border-bottom: 20px solid transparent;
+          border-top: 20px solid transparent;
+          border-right: 20px solid @realtyEnergyCardArrowBackgroundColor;
+          border-left: 20px solid transparent;
+          position: absolute;
+          left: -40px;
+        }
+
+        &.selected_energy_a {
+          top: 0;
+        }
+
+        &.selected_energy_b {
+          top: calc((1 * 40px) + 5px);
+        }
+
+        &.selected_energy_c {
+          top: calc((2 * 40px) + 5px);
+        }
+
+        &.selected_energy_d {
+          top: calc(3 * 45px);
+        }
+
+        &.selected_energy_e {
+          top: calc(4 * 45px);
+        }
+
+        &.selected_energy_f {
+          top: calc(5 * 45px);
+        }
+
+        &.selected_energy_g {
+          top: calc(6 * 45px);
+        }
+
+      }
+
+    }
+  }
+}
+
+
+
+
+

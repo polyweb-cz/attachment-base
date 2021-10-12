@@ -1,0 +1,44 @@
+& {
+
+  background: @paragraphImageRightWithHeadingBodyBackgroundColor;
+
+  display: flex;
+
+  .row.paragraphImageRightWithHeading {
+    flex-direction: row;
+    padding: 0 1em;
+
+    > div {
+      background: @paragraphImageRightWithHeadingBlockBackgroundColor;
+
+      &.v-align-middle {
+        padding: 0;
+      }
+
+      h3 {
+        color: @paragraphImageRightWithHeadingHeadingColor;
+        font-family: @paragraphImageRightWithHeadingHeadingFont;
+        font-size: @paragraphImageRightWithHeadingHeadingSize;
+      }
+
+      p {
+        color: @paragraphImageRightWithHeadingTextColor;
+        font-family: @paragraphImageRightWithHeadingTextFont;
+        font-size: @paragraphImageRightWithHeadingTextSize;
+
+        strong {
+          color: @paragraphImageRightWithHeadingSubHeadingColor;
+          font-family: @paragraphImageRightWithHeadingSubHeadingFont;
+          font-size: @paragraphImageRightWithHeadingSubHeadingSize;
+        }
+      }
+
+      picture {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+

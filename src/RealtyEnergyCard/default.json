@@ -1,0 +1,66 @@
+{
+	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": true,
+	"lockedAt": 1627285403,
+	"attachmentName": "RealtyEnergyCard",
+	"labelList": [
+		"Realty"
+	],
+	"translations": {
+	},
+	"optionsLoader": [
+		"anchor",
+		"container",
+		"indentation"
+	],
+	"options": [
+	],
+	"elements": {
+		"defaultGroup": [
+			[
+				{
+					"elementType": "Energy",
+					"varName": "energy",
+					"defaults": {
+						"text": "PENB",
+						"class": "sel_ener selected_energy_g"
+					}
+				}
+			]
+		]
+	},
+	"lessVariable": [
+		{
+			"keyName": "realtyEnergyCardBodyBackgroundColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "realtyEnergyCardBlockBackgroundColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "realtyEnergyCardArrowBackgroundColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "realtyEnergyCardTextColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "realtyEnergyCardTextFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "realtyEnergyCardTextSize",
+			"defaultValue": "21",
+			"type": "numeric",
+			"unit": "px"
+		}
+	]
+}
+

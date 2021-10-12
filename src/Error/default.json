@@ -1,0 +1,35 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "Error",
+  "labelList": [
+    "Test"
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+        {
+          "elementType": "Heading",
+          "varName": "text",
+          "defaults": {
+            "text": "..."
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "errorBodyBackground",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "errorHeadingsColor",
+      "defaultValue": "#000",
+      "type": "color"
+    }
+  ]
+}
+

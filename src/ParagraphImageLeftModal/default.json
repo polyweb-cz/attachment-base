@@ -1,0 +1,114 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "ParagraphImageLeftModal",
+  "extension": "SinglePicture",
+  "labelList": [
+    "Paragraph",
+    "Test"
+  ],
+  "translations": {
+    "heading": "Nadpis",
+    "perex": "Odstavec",
+    "headingModal": "Nadpis vyskakovacího okna",
+    "perexModal": "Odstavec vyskakovacího okna"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+        {
+          "elementType": "Heading",
+          "varName": "heading",
+          "defaults": {
+            "text": "Nadpis sekce"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "perex",
+          "defaults": {
+            "text": "Lorem ipsum Lorem ipsum"
+          }
+        },
+        {
+          "elementType": "Heading",
+          "varName": "headingModal",
+          "defaults": {
+            "text": "Nadpis Modalu"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "perexModal",
+          "defaults": {
+            "text": "Lorem ipsum Lorem ipsum"
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "paragraphImageLeftModalBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftModalBlockBackgroundColor",
+      "defaultValue": "#EDEDED",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftModalHeadingColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftModalHeadingFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageLeftModalHeadingSize",
+      "defaultValue": "53",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "paragraphImageLeftModalTextColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftModalTextFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageLeftModalTextSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "paragraphImageLeftModalIconColor",
+      "defaultValue": "#808080",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftModalIconSize",
+      "defaultValue": "80",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

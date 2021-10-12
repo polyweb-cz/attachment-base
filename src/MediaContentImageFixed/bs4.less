@@ -1,0 +1,27 @@
+& {
+  background: @mediaContentImageFixedBodyBackground;
+  border: @mediaContentImageFixedBodyBorderSize solid @mediaContentImageFixedBodyBorderColor;
+  border-radius: @mediaContentImageFixedBodyBorderRadius;
+
+  .row.mediaContentImageFixed {
+    border: @mediaContentImageFixedBlockBorderSize solid @mediaContentImageFixedBlockBorderColor;
+    border-radius: @mediaContentImageFixedBlockBorderRadius;
+
+    > div {
+      picture {
+        width: 100%;
+        height: 550px;
+
+        img {
+          width: 100%;
+          height: 550px;
+          object-fit: cover;
+          border: @mediaContentImageFixedImageBorderSize solid @mediaContentImageFixedImageBorderColor;
+          border-radius: @mediaContentImageFixedImageBorderRadius;
+        }
+      }
+    }
+  }
+}
+
+

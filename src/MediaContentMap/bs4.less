@@ -1,0 +1,148 @@
+& {
+  background: @mediaContentMapBodyBackground;
+  border: @mediaContentMapBodyBorderSize solid @mediaContentMapBodyBorderColor;
+  border-radius: @mediaContentMapBodyBorderRadius;
+
+  .row.mediaContentMap {
+    width: 100%;
+    margin: auto;
+
+    border: @mediaContentMapBlockBorderSize solid @mediaContentMapBlockBorderColor;
+    border-radius: @mediaContentMapBlockBorderRadius;
+
+    > div {
+      padding: 0;
+
+      .mediaContentMap_map {
+        width: 100%;
+        height: 450px;
+        background: #eee url(/asset/img/maps.png) center center no-repeat;
+      }
+
+      .gray-10 img[src^="http://mapserver.mapy.cz/"], .gray-10 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(1);
+      }
+
+      .gray-9 img[src^="http://mapserver.mapy.cz/"], .gray-9 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.9);
+      }
+
+      .gray-8 img[src^="http://mapserver.mapy.cz/"], .gray-8 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.8);
+      }
+
+      .gray-7 img[src^="http://mapserver.mapy.cz/"], .gray-7 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.7);
+      }
+
+      .gray-6 img[src^="http://mapserver.mapy.cz/"], .gray-6 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.6);
+      }
+
+      .gray-5 img[src^="http://mapserver.mapy.cz/"], .gray-5 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.5);
+      }
+
+      .gray-4 img[src^="http://mapserver.mapy.cz/"], .gray-4 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.4);
+      }
+
+      .gray-3 img[src^="http://mapserver.mapy.cz/"], .gray-3 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.3);
+      }
+
+      .gray-2 img[src^="http://mapserver.mapy.cz/"], .gray-2 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.2);
+      }
+
+      .gray-1 img[src^="http://mapserver.mapy.cz/"], .gray-1 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0.1);
+      }
+
+      .gray-0 img[src^="http://mapserver.mapy.cz/"], .gray-0 img[src^="https://mapserver.mapy.cz/"] {
+        filter: grayscale(0);
+      }
+    }
+
+    .smap {
+      border: @mediaContentMapMapBorderSize solid @mediaContentMapMapBorderColor;
+      border-radius: @mediaContentMapMapBorderRadius;
+
+      .card {
+        width: 320px;
+
+        .card-header {
+          margin-bottom: 0;
+          background-color: #FFF;
+          border-bottom: 0;
+          font-weight: bold;
+          padding: 0.5em;
+        }
+
+        .card-body {
+          position: relative;
+          overflow: auto;
+
+          padding: 0.5em;
+        }
+
+        .card-footer {
+          margin-bottom: 0;
+          background-color: #FFF;
+          border-bottom: 0;
+          padding: 0.5em;
+        }
+      }
+
+      &.clicked {
+        &::after {
+          display: none !important;
+        }
+      }
+
+      &.overlay {
+        background: transparent;
+        z-index: 99;
+
+        &::after {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          content: '';
+          z-index: 88;
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 34px;
+          transition: all .3s ease;
+          color: white;
+        }
+
+        &:hover {
+          &::after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            content: 'Pro použití mapy klikni';
+            z-index: 88;
+            top: 0;
+            left: 0;
+            background: #00000057;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 34px;
+            transition: all .3s ease;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+

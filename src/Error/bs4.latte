@@ -1,0 +1,23 @@
+{var $data = $values->{"polyweb-cz/base/Error"}}
+
+{ifset $data}
+    {ifset $data->text}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-danger">
+                    <em class="fa fa-exclamation-triangle"
+                        style="font-size: 500%; float: left; margin: 0 10px 0 0"></em>
+                    <strong>{_"messages.cms.general.fail.error"}:</strong><br/>
+                    {if is_string($data->text)}
+                        <p>{$data->text}</p>
+                    {else}
+                        {_"messages.cms.general.fail.unknown"}
+                    {/if}
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    {/ifset}
+{/ifset}
+{$extensionInput}
+{$optionsInput}

@@ -1,0 +1,89 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "MediaContentImageFixed",
+  "extension": "SinglePicture",
+  "labelList": [
+    "MediaContent",
+    "Contact",
+    "RES",
+    "IMG",
+    "DEF",
+    "Test"
+  ],
+  "translations": {
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "mediaContentImageFixedBodyBackground",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "mediaContentImageFixedBodyBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "mediaContentImageFixedBodyBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "mediaContentImageFixedBodyBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "mediaContentImageFixedBlockBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "mediaContentImageFixedBlockBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "mediaContentImageFixedBlockBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "mediaContentImageFixedImageBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "mediaContentImageFixedImageBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "mediaContentImageFixedImageBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

@@ -1,0 +1,25 @@
+& {
+
+
+  background: @paragraphSimpleBodyBackgroundColor;
+
+  display: flex;
+
+  .row.paragraphSimple {
+    width: 100%;
+    margin: 0;
+
+    > div {
+      background: @paragraphSimpleBlockBackgroundColor;
+      padding: 2em;
+
+      > [data-element="Paragraph"] {
+        color: @paragraphSimpleTextColor;
+        font-family: @paragraphSimpleTextFont;
+        font-size: @paragraphSimpleTextSize;
+      }
+    }
+  }
+}
+
+

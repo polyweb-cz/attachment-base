@@ -1,0 +1,49 @@
+& {
+
+
+  background: @paragraphImageLeftFloatBodyBackgroundColor;
+
+
+  display: flex;
+
+  .row.paragraphImageLeftFloat {
+    padding: 0 1em;
+
+    > div {
+      background: @paragraphImageLeftFloatBlockBackgroundColor;
+
+      padding: 2em;
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      [data-element="Paragraph"] {
+        color: @paragraphImageLeftFloatTextColor;
+        font-family: @paragraphImageLeftFloatTextFont;
+        font-size: @paragraphImageLeftFloatTextSize;
+
+        @media (max-width: 768px) {
+          float: none;
+          padding-left: 0;
+        }
+      }
+
+      picture {
+        float: left;
+        max-width: 20%;
+        width: auto;
+        padding-right: 15px;
+        padding-bottom: 5px;
+
+        @media (max-width: 768px) {
+          float: none;
+          padding-right: 0;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+

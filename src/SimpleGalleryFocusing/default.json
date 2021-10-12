@@ -1,0 +1,38 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 1627285403,
+  "attachmentName": "SimpleGalleryFocusing",
+  "extension": "Gallery",
+  "labelList": [
+    "MediaContent"
+  ],
+  "translations": {
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "simpleGalleryFocusingBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "simpleGalleryFocusingBlockBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    }
+  ]
+}
+

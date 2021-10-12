@@ -1,0 +1,14 @@
+{if $item->getChildren() !== null}
+    <li class="nav-item dropdown">
+        <a class="nav-link" href="{$item->getRoute()->getInputUrl()}">{$item->getName()}</a>
+        <div class="dropdown-menu">
+            {foreach $item->getChildren()->toArray() as $child}
+                {include 'bs4_item.latte' item => $child}
+            {/foreach}
+        </div>
+    </li>
+{else}
+    <li class="nav-item">
+        <a class="nav-link" href="{$item->getRoute()->getInputUrl()}">{$item->getName()}</a>
+    </li>
+{/if}

@@ -1,0 +1,91 @@
+& {
+  background: @jumboCallActionBodyBackgroundColor;
+  border: @jumboCallActionBodyBorderSize solid @jumboCallActionBodyBorderColor;
+  border-radius: @jumboCallActionBodyBorderRadius;
+
+  .jumbotron {
+    padding: 0;
+    margin: 0;
+
+    background: @jumboCallActionJumboBackgroundColor;
+    border: @jumboCallActionJumboBorderSize solid @jumboCallActionJumboBorderColor;
+    border-radius: @jumboCallActionJumboBorderRadius;
+
+    .container, .container-fluid {
+      .row {
+        padding-bottom: 1em;
+
+        background: @jumboCallActionBlockBackgroundColor;
+        border: @jumboCallActionBlockBorderSize solid @jumboCallActionBlockBorderColor;
+        border-radius: @jumboCallActionBlockBorderRadius;
+
+
+        &:first-child {
+          padding-top: 1em;
+        }
+
+        &:last-child {
+          //padding-bottom: 0;
+        }
+
+        &.jumboTop {
+          gap: 1rem 0;
+
+          > div {
+            display: flex;
+            flex-direction: column;
+            place-content: space-between;
+            align-items: center;
+          }
+        }
+
+        > div {
+          h1 {
+            color: @jumboCallActionHeading1Color;
+            font-family: @jumboCallActionHeading1Font;
+            font-size: @jumboCallActionHeading1Size;
+            border: @jumboCallActionHeading1BorderSize solid @jumboCallActionHeading1BorderColor;
+            border-radius: @jumboCallActionHeading1BorderRadius;
+          }
+
+          h2 {
+            color: @jumboCallActionHeading2Color;
+            font-family: @jumboCallActionHeading2Font;
+            font-size: @jumboCallActionHeading2Size;
+          }
+
+          h3 {
+            color: @jumboCallActionHeading3Color;
+            font-family: @jumboCallActionHeading3Font;
+            font-size: @jumboCallActionHeading3Size;
+          }
+
+          h4 {
+            color: @jumboCallActionHeading4Color;
+            font-family: @jumboCallActionHeading4Font;
+            font-size: @jumboCallActionHeading4Size;
+          }
+
+          a.btn-primary {
+            color: @jumboCallActionButtonColor;
+            font-family: @jumboCallActionButtonFont;
+            font-size: @jumboCallActionButtonSize;
+            background: @jumboCallActionButtonBackgroundColor;
+            border: @jumboCallActionButtonBorderSize solid @jumboCallActionButtonBorderColor;
+            border-radius: @jumboCallActionButtonBorderRadius;
+          }
+
+          img {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            object-fit: cover;
+            max-height: 600px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

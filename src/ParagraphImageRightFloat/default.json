@@ -1,0 +1,63 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "ParagraphImageRightFloat",
+  "extension": "SinglePicture",
+  "labelList": [
+    "Paragraph",
+    "Test"
+  ],
+  "translations": {
+    "perex": "Odstavec"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+        {
+          "elementType": "Paragraph",
+          "varName": "perex",
+          "defaults": {
+            "text": "Lorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n"
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "paragraphImageRightFloatBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightFloatBlockBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightFloatTextColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightFloatTextFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageRightFloatTextSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

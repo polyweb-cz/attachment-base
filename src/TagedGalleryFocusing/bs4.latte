@@ -1,0 +1,57 @@
+{var $data = $values->{"polyweb-cz/base/TagedGalleryFocusing"}}
+{var $extData = $extension->getData()}
+{var $gallery = $extData['images']}
+{var $tags = $extData['tags']}
+<div class="mb-2">
+    {if isset($extData['allTag']) && $extData['allTag'] === 'before'}
+        <button class="btn active tag-selector" data-show-images-tag="all">{_"all"}</button>
+    {/if}
+	{var $iter = 0}
+	{varType App\Modules\Cms\Entity\CmsTag $tag}
+	{foreach $tags as $tag}
+        {if isset($extData['allTag']) && $extData['allTag'] === 'noshowSelectFirst' && $iter === 0}
+            <button class="btn active tag-selector" data-show-images-tag="{$tag->getId()}">{$tag->getName()}</button>
+        {else}
+            <button class="btn tag-selector" data-show-images-tag="{$tag->getId()}">{$tag->getName()}</button>
+        {/if}
+        {var $iter = $iter + 1}
+    {/foreach}
+	{if isset($extData['allTag']) && $extData['allTag'] === 'after'}
+        <button class="btn active tag-selector" data-show-images-tag="all">{_"all"}</button>
+    {/if}
+
+</div>
+<div class="row taggedGallery">
+    {varType App\Modules\Cms\Entity\CmsImage $image}
+	{foreach $gallery as $image}
+        {var $tags = []}
+        {foreach $image->getTags() as $tag}
+            {var $tags[] = $tag->getId()}
+        {/foreach}
+        {var $descriptionString = ''}
+        {if $image->getTitle() !== ''}
+            {var $descriptionString = $image->getTitle()}
+        {/if}
+        {if $image->getDescription() !== ''}
+            {var $descriptionString = $image->getDescription()}
+        {/if}
+        {if $image->getDescription() !== '' && $image->getTitle() !== ''}
+            {var $descriptionString = $image->getTitle() . ' | ' . $image->getDescription()}
+        {/if}
+        <div class="col p-1">
+            <a href="{$pathToRoot}{$image->getFilePath()}" data-lightbox="{$attachmentId}"
+               data-title="{$descriptionString}"
+               data-show-images="{implode(' ', $tags)}"
+               class="cms-show-modal"
+            >
+                <picture class="img-fluid text-center" n:picture="xl, lg, md, sm, xs, lg"
+                         alt="{$image->getDescription()}" title="{$image->getTitle()}"
+                         data-image="$image">
+
+                </picture>
+            </a>
+        </div>
+    {/foreach}
+</div>
+{$extensionInput}
+{$optionsInput}

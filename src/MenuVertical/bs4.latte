@@ -1,0 +1,123 @@
+{var $data = $values->{"polyweb-cz/base/MenuVertical"}}
+
+{varType App\Modules\Cms\Entity\CmsMenu $menu}
+{var $menu = $extension->getData('menu')[0]}
+<div class="row" data-extension-name="Menu">
+    <div class="col">
+        <h4 n:varname="header" n:classes="small" n:editable>{$text}</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <ul class="nav nav-pills menu-vertical-attachment" data-ext-handler id="menu">
+            {varType App\Modules\Cms\Entity\CmsMenuItem $menuItem}
+			{foreach $menu->getMenuItems() as $menuItem}
+                {continueIf $menuItem->getParent() !== null}
+                {if $menuItem->getChildren() !== null}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                           aria-haspopup="true" aria-expanded="false"
+                           href="{if $menuItem->getRoute() !== null}{$menuItem->getRoute()->getInputUrl()}{else}/{/if}">
+                            {$menuItem->getName()}
+                        </a>
+                        {*						<div class="dropdown-menu">*}
+{*							{foreach $menuItem->getChildren()->toArray() as $child}*}
+{*								<a class="dropdown-item" href="#">{$child->getName()}</a>*}
+{*								{include 'bs4_item.latte' item => $child}*}
+{*							{/foreach}*}
+{*						</div>*}
+                    </li>
+                {else}
+                    {if $menuItem->getRoute()->getPage() instanceof App\Modules\Cms\Entity\CmsPage}
+                        <li class="nav-item">
+                            <a class="nav-link {if onPage($menuItem)}active{/if}"
+                               href="{menuLink($menuItem)}">{$menuItem->getName()}</a>
+                        </li>
+                    {else}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{menuLink($menuItem)}" target="_blank">{$menuItem->getName()}</a>
+                        </li>
+                    {/if}
+                {/if}
+            {/foreach}
+        </ul>
+    </div>
+</div>
+<script>
+    //TODO, SEM TO NEPATRI, chyba ve vykresleni v nastaveni kde se meni barvy
+    // bud poresit jquery v nahledu NEBO to dat do samostatneho js
+
+    // $(document).ready(function () {
+    // 	$(document).scroll(function (event) {
+    // 		onScroll(event)
+    // 	})
+    // })
+    // function onScroll(event) {
+    // 	header = $("#menu").height();
+    // 	scrollPos = $(document).scrollTop() + header;
+    // 	$.each($("li.nav-item a"), function (key, value) {
+    // 		fullCurrLink = $(this).attr("href");
+    // 		temp = fullCurrLink.split('#');
+    // 		currLink = temp[1];
+    // 		if (currLink) {
+    //
+    // 			refElement = $('#' + currLink);
+    // 			if (refElement.length) {
+    // 				//console.log(currLink +' | top =' + refElement.position().top + ' | scrollPos = ' +scrollPos + ' | height = ' +refElement.height());
+    // 				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+    // 					$(this).addClass("active");
+    // 				} else {
+    // 					$(this).removeClass("active");
+    // 				}
+    // 			}
+    // 		}
+    // 	});
+    // }
+
+
+    // $(document).ready(function () {
+    // 	$('#menu, a[href*="#"]')
+    // 			// Remove links that don't actually link to anything
+    // 			// .not('[href="#"]')
+    // 			.not('[href="#0"]')
+    // 			.on('click', function (event) {
+    // 				event.stopImmediatePropagation();
+    // 				let lastActive = $('#menu, a.active');
+    // 				$(this).addClass('active');
+    // 				$(lastActive).removeClass('active')
+    //
+    // 				var target = $(this.hash);
+    // 				// Does a scroll target exist?
+    // 				if (target.length) {
+    // 					// Only prevent default if animation is actually gonna happen
+    // 					event.preventDefault();
+    // 					$('html, body').animate({
+    // 						scrollTop: target.offset().top
+    // 					}, 1000, function () {
+    // 						// Callback after animation
+    // 						// Must change focus!
+    // 						var $target = $(target);
+    // 						$target.focus();
+    // 						if ($target.is(":focus")) { // Checking if the target was focused
+    // 							return false;
+    // 						} else {
+    // 							$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+    // 							$target.focus(); // Set focus again
+    // 						}
+    // 						;
+    //
+    // 						lastActive = $(this);
+    // 					});
+    //
+    // 				}
+    //
+    // 			});
+    // })
+</script>
+<style>
+    .fixed {
+        position: fixed;
+    }
+</style>
+{$extensionInput}
+{$optionsInput}

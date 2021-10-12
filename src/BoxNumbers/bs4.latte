@@ -1,0 +1,19 @@
+{var $data = $values->{"polyweb-cz/base/BoxNumbers"}}
+
+<div class="row boxNumbers row-eq-height" n:group="boxGroup">
+
+    {foreach $data->boxGroup as $item}
+        <div class="col" n:group-child>
+            <div class="boxNumbers_wrapper">
+                <div class="boxNumbers_inner">
+                    <span n:classes="boxNumbers_inner_number" n:varname="boxNumber" n:editable>{$text}</span>
+                    <span n:classes="boxNumbers_inner_sub" n:varname="boxSmall" n:editable>{$text}</span>
+                    <span n:classes="boxNumbers_inner_txt" n:varname="boxPerex" n:editable>{$text}</span>
+                </div>
+            </div>
+        </div>
+    {/foreach}
+
+</div>
+{$extensionInput}
+{$optionsInput}

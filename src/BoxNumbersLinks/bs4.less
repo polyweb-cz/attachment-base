@@ -1,0 +1,53 @@
+& {
+  max-height: none;
+  min-height: unset;
+  display: flex;
+  justify-content: center;
+
+  background: @boxNumbersLinksBodyBackground;
+  border: @boxNumbersLinksBodyBorderSize solid @boxNumbersLinksBodyBorderColor;
+  border-radius: @boxNumbersLinksBodyBorderRadius;
+
+  .row.boxNumbersLinks {
+    width: 100%;
+
+    > div {
+      min-width: 50%;
+
+      @media (min-width: 768px) {
+        min-width: 33%;
+      }
+      @media (min-width: 992px) {
+        min-width: 25%;
+      }
+      @media (min-width: 1200px) {
+        min-width: 20%;
+      }
+
+      background: @boxNumbersLinksBlockBackgroundColor;
+      border: @boxNumbersLinksBlockBorderSize solid @boxNumbersLinksBlockBorderColor;
+      border-radius: @boxNumbersLinksBlockBorderRadius;
+
+      .boxNumbersLinks_wrapper {
+        text-align: center;
+        height: auto;
+        font-weight: bolder;
+        line-height: 1.5em;
+        padding: 2em 0;
+
+        .boxNumbersLinks_inner {
+          a {
+            background: @boxNumbersLinksButtonBackgroundColor;
+            color: @boxNumbersLinksTextColor;
+            font-family: @boxNumbersLinksTextFont;
+            font-size: @boxNumbersLinksTextFontSize;
+            border: @boxNumbersLinksButtonBorderSize solid @boxNumbersLinksButtonBorderColor;
+            border-radius: @boxNumbersLinksButtonBorderRadius;
+          }
+        }
+      }
+    }
+  }
+}
+
+

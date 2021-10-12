@@ -1,0 +1,63 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "ParagraphImageRight",
+  "extension": "SinglePicture",
+  "labelList": [
+    "Paragraph",
+    "Test"
+  ],
+  "translations": {
+    "perex": "Odstavec"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+        {
+          "elementType": "Paragraph",
+          "varName": "perex",
+          "defaults": {
+            "text": "Lorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem"
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "paragraphImageRightBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightBlockBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightTextColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageRightTextFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageRightTextSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

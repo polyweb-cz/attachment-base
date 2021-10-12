@@ -1,0 +1,73 @@
+{
+	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": true,
+	"lockedAt": 0,
+	"attachmentName": "ParagraphImageLeft",
+	"extension": "SinglePicture",
+	"labelList": [
+		"Paragraph",
+		"Test"
+	],
+	"optionsLoader": [
+		"anchor",
+		"container",
+		"indentation"
+	],
+	"options": [
+	],
+	"translations": {
+		"heading": "Odstavec textu",
+		"Picture": "Obrázek"
+	},
+	"elements": {
+		"defaultGroup": [
+			[
+				{
+					"elementType": "Paragraph",
+					"varName": "perex",
+					"defaults": {
+						"text": "Lorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem"
+					}
+				},
+				{
+					"varName": "mainPicture",
+					"elementType": "Picture",
+					"defaults": {
+						"alt": "Alternativní text",
+						"title": "Titulek obrázku",
+						"text": "notext"
+					}
+				}
+			]
+		]
+	},
+	"lessVariable": [
+		{
+			"keyName": "paragraphImageLeftBodyBackgroundColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "paragraphImageLeftBlockBackgroundColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "paragraphImageLeftTextColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "paragraphImageLeftTextFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "paragraphImageLeftTextSize",
+			"defaultValue": "16",
+			"type": "numeric",
+			"unit": "px"
+		}
+	]
+}
+

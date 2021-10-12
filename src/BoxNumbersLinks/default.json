@@ -1,0 +1,166 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "BoxNumbersLinks",
+  "labelList": [
+    "Box",
+    "Button",
+    "RES",
+    "DEF",
+    "Test"
+  ],
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "translations": {
+    "boxLink": "Odkaz"
+  },
+  "elements": {
+    "defaultGroup": [
+      [
+      ]
+    ],
+    "boxGroup": [
+      [
+        {
+          "elementType": "Button",
+          "varName": "boxLink",
+          "defaults": {
+            "text": "Napište nám !",
+            "href": "https://google.com"
+          }
+        }
+      ],
+      [
+        {
+          "elementType": "Button",
+          "varName": "boxLink",
+          "defaults": {
+            "text": "Kontaktujte nás !",
+            "href": "https://seznam.com"
+          }
+        }
+      ],
+      [
+        {
+          "elementType": "Button",
+          "varName": "boxLink",
+          "defaults": {
+            "text": "Ozvetě se !",
+            "href": "https://seznam.com"
+          }
+        }
+      ],
+      [
+        {
+          "elementType": "Button",
+          "varName": "boxLink",
+          "defaults": {
+            "text": "Domluvme se !",
+            "href": "https://seznam.com"
+          }
+        }
+      ],
+      [
+        {
+          "elementType": "Button",
+          "varName": "boxLink",
+          "defaults": {
+            "text": "Poptejte se !",
+            "href": "https://seznam.com"
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "boxNumbersLinksBodyBackground",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxNumbersLinksBodyBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxNumbersLinksBodyBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxNumbersLinksBodyBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxNumbersLinksBlockBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxNumbersLinksBlockBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxNumbersLinksBlockBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxNumbersLinksBlockBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxNumbersLinksButtonBackgroundColor",
+      "defaultValue": "#09C",
+      "type": "color"
+    },
+    {
+      "keyName": "boxNumbersLinksButtonBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxNumbersLinksButtonBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxNumbersLinksButtonBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxNumbersLinksTextColor",
+      "defaultValue": "#FFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxNumbersLinksTextFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "boxNumbersLinksTextFontSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

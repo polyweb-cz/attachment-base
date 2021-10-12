@@ -1,0 +1,53 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 1627285403,
+	"attachmentName": "TagedGalleryFocusing",
+  "extension": "GalleryCategorized",
+  "labelList": [
+    "MediaContent"
+  ],
+  "translations": {
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "tagedGalleryFocusingBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "tagedGalleryFocusingBlockBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "tagedGalleryFocusingActiveTagBackgroundColor",
+      "defaultValue": "#FF0000",
+      "type": "color"
+    },
+    {
+      "keyName": "tagedGalleryFocusingActiveTagColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "tagedGalleryFocusingTagColor",
+      "defaultValue": "#000",
+      "type": "color"
+    }
+  ]
+}
+

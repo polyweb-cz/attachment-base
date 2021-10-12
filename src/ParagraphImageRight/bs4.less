@@ -1,0 +1,38 @@
+& {
+
+
+  background: @paragraphImageRightBodyBackgroundColor;
+
+
+  display: flex;
+  justify-content: center;
+
+  .row.paragraphImageRight {
+    flex-direction: row;
+    padding: 0 1em;
+
+    > div {
+      background: @paragraphImageRightBlockBackgroundColor;
+
+      &:first-child {
+        padding: 2em 1em 2em 2em;
+      }
+
+      &:nth-child(2) {
+        padding: 2em 2em 2em 1em;
+      }
+
+      div[data-type="text"] {
+        color: @paragraphImageRightTextColor;
+        font-family: @paragraphImageRightTextFont;
+        font-size: @paragraphImageRightTextSize;
+      }
+
+      picture {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+

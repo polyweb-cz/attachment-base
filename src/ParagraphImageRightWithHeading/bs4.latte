@@ -1,0 +1,20 @@
+{var $data = $values->{"polyweb-cz/base/ParagraphImageRightWithHeading"}}
+
+{varType App\Modules\Cms\Entity\CmsImage $extensionData}
+{var $extensionData = $extension->getData('ImgId')[0]}
+
+<div class="row paragraphImageRightWithHeading" data-schemable="bodyBackground">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+        <h3 n:varname="heading" n:classes="mt-2" n:editable>{$text}</h3>
+        <div n:classes="subheading" n:editable n:varname="subHeading">{$text}</div>
+        <div n:editable n:varname="perex">{$text}</div>
+    </div>
+    <div class="pt-3 col-12 pt-sm-3 col-sm-12 pt-md-3 col-md-12 pt-lg-0 col-lg-6 v-align-middle">
+        <picture n:picture="xl, lg, md, md, md, lg" alt="NoImage" class="img-fluid w-100" data-image="$extensionData">
+
+        </picture>
+    </div>
+</div>
+
+{$extensionInput}
+{$optionsInput}

@@ -1,0 +1,420 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 1627285403,
+  "attachmentName": "BoxIconsTextLeft3OnRow",
+  "labelList": [
+    "Box"
+  ],
+  "translations": {
+    "boxStrong": "Zvýrazněný text",
+    "boxPerex": "Text pod zvýrazneným textem",
+    "boxIcon": "Ikona",
+    "boxLink": "Odkaz"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+      ]
+    ],
+    "boxGroup": [
+      [
+        {
+          "elementType": "Link",
+          "varName": "boxLink",
+          "defaults": {
+            "href": "https://google.com",
+            "css": "",
+            "title": "Navštívit Google"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxStrong",
+          "defaults": {
+            "text": "Rychle"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxPerex",
+          "defaults": {
+            "text": "rychleji to nejde"
+          }
+        },
+        {
+          "elementType": "IconButton",
+          "varName": "boxIcon",
+          "defaults": {
+            "class": "fab fa-audible",
+            "text": ""
+          }
+        }
+      ],
+      [
+        {
+          "elementType": "Link",
+          "varName": "boxLink",
+          "defaults": {
+            "href": "https://google.com",
+            "css": "",
+            "title": "Navštívit Google"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxStrong",
+          "defaults": {
+            "text": "Levně"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxPerex",
+          "defaults": {
+            "text": "výhodnější nenajdete"
+          }
+        },
+        {
+          "elementType": "IconButton",
+          "varName": "boxIcon",
+          "defaults": {
+            "class": "fas fa-comment-dollar",
+            "text": ""
+          }
+        }
+      ],
+      [
+        {
+          "elementType": "Link",
+          "varName": "boxLink",
+          "defaults": {
+            "href": "https://google.com",
+            "css": "",
+            "title": "Navštívit Google"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxStrong",
+          "defaults": {
+            "text": "Kvalitně"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "boxPerex",
+          "defaults": {
+            "text": "maximální jakkost"
+          }
+        },
+        {
+          "elementType": "IconButton",
+          "varName": "boxIcon",
+          "defaults": {
+            "class": "fab fa-angellist",
+            "text": ""
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "label": "MODUL",
+			"headingSize": 2,
+      "keyName": "boxIconsTextLeft3OnRowBodyBackground",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowBodyBorder",
+      "defaultValue": "0",
+			"headingSize": 2,
+      "label": "ohraničení",
+      "type": "multiple",
+      "fields": [
+        {
+          "type": "select",
+          "defaultValue": "none",
+          "separator": "",
+          "options": [
+            "none",
+            "solid",
+            "dotted",
+            "dashed",
+            "double",
+            "groove",
+            "ridge",
+            "inset",
+            "outset"
+          ]
+        },
+        {
+          "type": "numeric",
+          "defaultValue": 0,
+          "separator": " ",
+          "rangeMin": -20,
+          "rangeMax": 20,
+          "step": 2
+        },
+        {
+          "type": "select",
+          "defaultValue": "px",
+          "separator": "",
+          "options": [
+            "px",
+            "em",
+            "%",
+            "rem"
+          ]
+        },
+        {
+          "type": "color",
+          "defaultValue": "#FFFFFF",
+          "separator": " "
+        }
+      ]
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowBodyBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowBodyBoxShadow",
+      "type": "multiple",
+      "defaultValue": "inset 0px 0px #000",
+      "fields": [
+        {
+          "type": "select",
+          "defaultValue": "inset",
+          "separator": " ",
+          "options": [
+            "~''",
+            "inset"
+          ]
+        },
+        {
+          "type": "numeric",
+          "defaultValue": 0,
+          "separator": " ",
+          "rangeMin": -100,
+          "rangeMax": 100,
+          "step": 5
+        },
+        {
+          "type": "select",
+          "defaultValue": "px",
+          "separator": "",
+          "options": [
+            "px",
+            "em",
+            "%"
+          ]
+        },
+        {
+          "type": "numeric",
+          "defaultValue": 0,
+          "separator": " ",
+          "rangeMin": -100,
+          "rangeMax": 100,
+          "step": 5
+        },
+        {
+          "type": "select",
+          "defaultValue": "px",
+          "separator": "",
+          "options": [
+            "px",
+            "em",
+            "%"
+          ]
+        },
+        {
+          "type": "numeric",
+          "defaultValue": 0,
+          "separator": " ",
+          "rangeMin": -100,
+          "rangeMax": 100,
+          "step": 5
+        },
+        {
+          "type": "select",
+          "defaultValue": "px",
+          "separator": "",
+          "options": [
+            "px",
+            "em",
+            "%"
+          ]
+        },
+        {
+          "type": "color",
+          "defaultValue": "#000000",
+          "separator": " ",
+          "break": true
+        },
+        {
+          "type": "numeric",
+          "defaultValue": 0,
+          "separator": ", ",
+          "rangeMin": -100,
+          "rangeMax": 100,
+          "step": 5
+        },
+        {
+          "type": "select",
+          "defaultValue": "px",
+          "separator": "",
+          "options": [
+            "px",
+            "em",
+            "%"
+          ]
+        },
+        {
+          "type": "numeric",
+          "defaultValue": 0,
+          "separator": " ",
+          "rangeMin": -100,
+          "rangeMax": 100,
+          "step": 5
+        },
+        {
+          "type": "select",
+          "defaultValue": "px",
+          "separator": "",
+          "options": [
+            "px",
+            "em",
+            "%"
+          ]
+        },
+        {
+          "type": "numeric",
+          "defaultValue": 0,
+          "separator": " ",
+          "rangeMin": -100,
+          "rangeMax": 100,
+          "step": 5
+        },
+        {
+          "type": "select",
+          "defaultValue": "px",
+          "separator": "",
+          "options": [
+            "px",
+            "em",
+            "%"
+          ]
+        },
+        {
+          "type": "color",
+          "defaultValue": "#000000",
+          "separator": " "
+        }
+      ]
+    },
+    {
+      "label": "BLOK",
+      "keyName": "boxIconsTextLeft3OnRowBlockBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowBlockBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowBlockBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowBlockBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "label": "NADPIS",
+      "keyName": "boxIconsTextLeft3OnRowHeadingsColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowHeadingsFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowHeadingsFontSize",
+      "defaultValue": "21",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "label": "TEXT",
+      "keyName": "boxIconsTextLeft3OnRowTextColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowTextFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowTextFontSize",
+      "defaultValue": "21",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "label": "IKONA",
+      "keyName": "boxIconsTextLeft3OnRowIconBackgroundColor",
+      "defaultValue": "#E9E9E9",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowIconBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowIconBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowIconBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowIconColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "boxIconsTextLeft3OnRowIconSize",
+      "defaultValue": "40",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

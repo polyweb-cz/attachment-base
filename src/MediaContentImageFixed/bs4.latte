@@ -1,0 +1,14 @@
+{varType App\Modules\Cms\Entity\CmsImage $extensionData}
+
+{varType App\Modules\Cms\Entity\CmsImage $image}
+{var $image = $extension->getData('ImgId')[0]}
+
+<div class="row mediaContentImageFixed">
+    <div class="col">
+        <picture class="img-fluid text-center" n:picture="xl, lg, md, sm, xs, lg" alt="NoImage" data-image="$image">
+        </picture>
+    </div>
+</div>
+
+{$extensionInput}
+{$optionsInput}

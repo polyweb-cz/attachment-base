@@ -1,0 +1,53 @@
+& {
+  max-height: none;
+  min-height: unset;
+  display: flex;
+  justify-content: center;
+
+  background: @buttonSimpleBodyBackground;
+  border: @buttonSimpleBodyBorderSize solid @buttonSimpleBodyBorderColor;
+  border-radius: @buttonSimpleBodyBorderRadius;
+
+  .row.buttonSimple {
+    width: 100%;
+
+    > div {
+      min-width: 50%;
+
+      @media (min-width: 768px) {
+        min-width: 33%;
+      }
+      @media (min-width: 992px) {
+        min-width: 25%;
+      }
+      @media (min-width: 1200px) {
+        min-width: 20%;
+      }
+
+      background: @buttonSimpleBlockBackgroundColor;
+      border: @buttonSimpleBlockBorderSize solid @buttonSimpleBlockBorderColor;
+      border-radius: @buttonSimpleBlockBorderRadius;
+
+      .buttonSimple_wrapper {
+        text-align: center;
+        height: auto;
+        font-weight: bolder;
+        line-height: 1.5em;
+        padding: 2em 0;
+
+        .buttonSimple_inner {
+          a {
+            background: @buttonSimpleButtonBackgroundColor;
+            color: @buttonSimpleTextColor;
+            font-family: @buttonSimpleTextFont;
+            font-size: @buttonSimpleTextFontSize;
+            border: @buttonSimpleButtonBorderSize solid @buttonSimpleButtonBorderColor;
+            border-radius: @buttonSimpleButtonBorderRadius;
+          }
+        }
+      }
+    }
+  }
+}
+
+

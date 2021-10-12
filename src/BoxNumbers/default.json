@@ -1,0 +1,523 @@
+{
+		"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": true,
+	"lockedAt": 1627285403,
+	"attachmentName": "BoxNumbers",
+	"labelList": [
+		"Box"
+	],
+	"translations": {
+		"boxNumber": "Číslo v boxu",
+		"boxSmall": "Dodatek k číslu",
+		"boxPerex": "Text pod číslem a dodatkem"
+	},
+	"optionsLoader": [
+		"anchor",
+		"container",
+		"indentation"
+	],
+	"options": [
+	],
+	"elements": {
+		"defaultGroup": [
+			[
+			]
+		],
+		"boxGroup": [
+			[
+				{
+					"elementType": "SingleLine",
+					"varName": "boxNumber",
+					"defaults": {
+						"text": "365"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxSmall",
+					"defaults": {
+						"text": "dní"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxPerex",
+					"defaults": {
+						"text": " v roce"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "SingleLine",
+					"varName": "boxNumber",
+					"defaults": {
+						"text": "24"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxSmall",
+					"defaults": {
+						"text": "h"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxPerex",
+					"defaults": {
+						"text": " ve dne"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "SingleLine",
+					"varName": "boxNumber",
+					"defaults": {
+						"text": "60"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxSmall",
+					"defaults": {
+						"text": "m"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxPerex",
+					"defaults": {
+						"text": " v hodině"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "SingleLine",
+					"varName": "boxNumber",
+					"defaults": {
+						"text": "60"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxSmall",
+					"defaults": {
+						"text": "s"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxPerex",
+					"defaults": {
+						"text": " v minutě"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "SingleLine",
+					"varName": "boxNumber",
+					"defaults": {
+						"text": "100"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxSmall",
+					"defaults": {
+						"text": "ms"
+					}
+				},
+				{
+					"elementType": "SingleLine",
+					"varName": "boxPerex",
+					"defaults": {
+						"text": " v sekundě"
+					}
+				}
+			]
+		]
+	},
+	"lessVariable": [
+		{
+			"keyName": "boxNumbersBoxCount",
+			"defaultValue": "1fr 1fr 1fr 1fr 1fr",
+			"type": "multiple",
+			"label": "boxCount",
+			"headingSize": 6,
+			"fields": [
+				{
+					"varName": "size1",
+					"type": "select",
+					"separator": " ",
+					"defaultValue": "1fr",
+					"options": [
+						"~''",
+						"1fr",
+						"2fr"
+					]
+				},
+				{
+					"varName": "size2",
+					"type": "select",
+					"separator": " ",
+					"defaultValue": "1fr",
+					"options": [
+						"~''",
+						"1fr",
+						"2fr"
+					]
+				},
+				{
+					"varName": "size3",
+					"type": "select",
+					"separator": " ",
+					"defaultValue": "1fr",
+					"options": [
+						"~''",
+						"1fr",
+						"2fr"
+					]
+				},
+				{
+					"varName": "size4",
+					"type": "select",
+					"separator": " ",
+					"defaultValue": "1fr",
+					"options": [
+						"~''",
+						"1fr",
+						"2fr"
+					]
+				},
+				{
+					"varName": "size5",
+					"type": "select",
+					"separator": " ",
+					"defaultValue": "1fr",
+					"options": [
+						"~''",
+						"1fr",
+						"2fr"
+					]
+				},
+				{
+					"varName": "size6",
+					"type": "select",
+					"separator": " ",
+					"defaultValue": "~''",
+					"options": [
+						"~''",
+						"1fr",
+						"2fr"
+					]
+				}
+			]
+		},
+		{
+			"keyName": "boxNumbersBodyBackground",
+			"defaultValue": "~\"@{PrimaryColor3}\"",
+			"type": "color"
+		},
+		{
+			"keyName": "boxNumbersBodyBorderColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "boxNumbersBodyBorderSize",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "boxNumbersBodyBorderRadius",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "boxNumbersBlockBackgroundColor",
+			"defaultValue": "#16C7FF",
+			"type": "color"
+		},
+		{
+			"keyName": "boxNumbersBlockBorderColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "boxNumbersBlockBorderSize",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "boxNumbersBlockBorderRadius",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "boxNumbersHeadingsColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "boxNumbersHeadingsFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "boxNumbersHeadingsFontSize",
+			"defaultValue": "40",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"type": "multiple",
+			"defaultValue": "normal",
+			"keyName": "boxNumbersHeadingsFontWeight",
+			"fields": [
+				{
+					"type": "select",
+					"defaultValue": "normal",
+					"options": [
+						"normal",
+						"bolder",
+						"bold"
+					],
+					"separator": "",
+					"varName": "weight"
+				}
+			]
+		},
+		{
+			"label": "Nadpis",
+			"headingSize": 3,
+			"keyName": "boxNumbersSubHeadingColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "boxNumbersSubHeadingFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "boxNumbersSubHeadingFontSize",
+			"defaultValue": "14",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"label": "Box Perex",
+			"headingSize": 6,
+			"keyName": "boxNumbersTextColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "boxNumbersTextFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "boxNumbersTextFontSize",
+			"defaultValue": "19",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "boxNumbersGap",
+			"defaultValue": "1",
+			"type": "numeric",
+			"unit": "rem"
+		},
+		{
+			"keyName": "boxNumbersBoreder",
+			"defaultValue": "none",
+			"label": "Border",
+			"headingSize": 6,
+			"type": "multiple",
+			"fields": [
+				{
+					"type": "select",
+					"defaultValue": "none",
+					"separator": "",
+					"options": [
+						"solid",
+						"none",
+						"dotted",
+						"hue"
+					],
+					"varName": "borderType"
+				},
+				{
+					"type": "numeric",
+					"defaultValue": 0,
+					"separator": " ",
+					"rangeMin": -100,
+					"rangeMax": 100,
+					"step": 2,
+					"varName": "borderSize"
+				},
+				{
+					"type": "select",
+					"defaultValue": "px",
+					"separator": "",
+					"options": [
+						"px",
+						"em",
+						"rem"
+					],
+					"varName": "borderSizeUnit"
+				},
+				{
+					"type": "color",
+					"defaultValue": "#FFFEEE",
+					"separator": " ",
+					"varName": "borderColor"
+				}
+			]
+		},
+		{
+			"type": "multiple",
+			"defaultValue": "0px 0px #000",
+			"keyName": "boxNumbersBoxShadow",
+			"fields": [
+				{
+					"type": "numeric",
+					"defaultValue": 0,
+					"separator": "",
+					"rangeMin": -100,
+					"rangeMax": 100,
+					"step": 5,
+					"varName": "number1"
+				},
+				{
+					"type": "select",
+					"defaultValue": "px",
+					"separator": "",
+					"options": [
+						"px",
+						"em"
+					],
+					"varName": "unit1"
+				},
+				{
+					"type": "numeric",
+					"defaultValue": 0,
+					"separator": " ",
+					"rangeMin": -100,
+					"rangeMax": 100,
+					"step": 5,
+					"varName": "number2"
+				},
+				{
+					"type": "select",
+					"defaultValue": "px",
+					"separator": "",
+					"options": [
+						"px",
+						"em"
+					],
+					"varName": "unit2"
+				},
+				{
+					"type": "numeric",
+					"defaultValue": 0,
+					"separator": " ",
+					"rangeMin": -100,
+					"rangeMax": 100,
+					"step": 5,
+					"varName": "number3"
+				},
+				{
+					"type": "select",
+					"defaultValue": "px",
+					"separator": "",
+					"options": [
+						"px",
+						"em"
+					],
+					"varName": "unit3"
+				},
+				{
+					"type": "color",
+					"defaultValue": "#000000",
+					"separator": " ",
+					"break": true,
+					"varName": "color1"
+				},
+				{
+					"type": "numeric",
+					"defaultValue": 0,
+					"separator": ", ",
+					"rangeMin": -100,
+					"rangeMax": 100,
+					"step": 5,
+					"varName": "number4"
+				},
+				{
+					"type": "select",
+					"defaultValue": "px",
+					"separator": "",
+					"options": [
+						"px",
+						"em"
+					],
+					"varName": "unit4"
+				},
+				{
+					"type": "numeric",
+					"defaultValue": 0,
+					"separator": " ",
+					"rangeMin": -100,
+					"rangeMax": 100,
+					"step": 5,
+					"varName": "number5"
+				},
+				{
+					"type": "select",
+					"defaultValue": "px",
+					"separator": "",
+					"options": [
+						"px",
+						"em"
+					],
+					"varName": "unit5"
+				},
+				{
+					"type": "numeric",
+					"defaultValue": 0,
+					"separator": " ",
+					"rangeMin": -100,
+					"rangeMax": 100,
+					"step": 5,
+					"varName": "number6"
+				},
+				{
+					"type": "select",
+					"defaultValue": "px",
+					"separator": "",
+					"options": [
+						"px",
+						"em"
+					],
+					"varName": "unit6"
+				},
+				{
+					"type": "color",
+					"defaultValue": "#000000",
+					"separator": " ",
+					"varName": "color2"
+				}
+			]
+		}
+	]
+}
+

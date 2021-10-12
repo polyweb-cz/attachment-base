@@ -1,0 +1,81 @@
+& {
+  display: flex;
+  justify-content: center;
+
+  background: @boxNumbersBodyBackground;
+  border: @boxNumbersBodyBorderSize solid @boxNumbersBodyBorderColor;
+  border-radius: @boxNumbersBodyBorderRadius;
+
+  .row.boxNumbers {
+    border: @boxNumbersBoreder;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-gap: @boxNumbersGap;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (min-width: 992px) {
+      //grid-template-columns: 1fr 0fr;
+      grid-template-columns: @boxNumbersBoxCount;
+    }
+
+    > div {
+      padding: 0;
+
+      .boxNumbers_wrapper {
+        box-shadow: @boxNumbersBoxShadow;
+        text-align: center;
+        height: 6.6em;
+        font-weight: bolder;
+        line-height: 1.5em;
+        padding-top: 1.5em;
+
+        background: @boxNumbersBlockBackgroundColor;
+        //border: @boxNumbersBlockBorderSize solid @boxNumbersBlockBorderColor;
+
+        border-radius: @boxNumbersBlockBorderRadius;
+
+        .boxNumbers_inner {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: baseline;
+
+          .boxNumbers_inner_number {
+            color: @boxNumbersHeadingsColor;
+            font-family: @boxNumbersHeadingsFont;
+            font-size: @boxNumbersHeadingsFontSize;
+            font-weight: @boxNumbersHeadingsFontWeight;
+          }
+
+          .boxNumbers_inner_sub {
+            margin-left: 4px;
+
+            color: @boxNumbersSubHeadingColor;
+            font-family: @boxNumbersSubHeadingFont;
+            font-size: @boxNumbersSubHeadingFontSize;
+          }
+
+          .boxNumbers_inner_txt {
+            flex: 0 0 100%;
+
+            color: @boxNumbersTextColor;
+            font-family: @boxNumbersTextFont;
+            font-size: @boxNumbersTextFontSize;
+          }
+        }
+      }
+    }
+  }
+}
+
+

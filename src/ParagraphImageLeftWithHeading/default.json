@@ -1,0 +1,111 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "ParagraphImageLeftWithHeading",
+  "extension": "SinglePicture",
+  "labelList": [
+    "Paragraph",
+    "Test"
+  ],
+  "translations": {
+    "heading": "Nadpis třetí úrovně - h3",
+    "subHeading": "Nadpis třetí úrovně",
+    "perex": "Odstavec"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+        {
+          "elementType": "Paragraph",
+          "varName": "perex",
+          "defaults": {
+            "text": "\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem"
+          }
+        },
+        {
+          "elementType": "Heading",
+          "varName": "heading",
+          "defaults": {
+            "text": "Nadpis třetí úrovně"
+          }
+        },
+        {
+          "elementType": "Paragraph",
+          "varName": "subHeading",
+          "defaults": {
+            "text": "Podnadpis"
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "paragraphImageLeftWithHeadingBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingBlockBackgroundColor",
+      "defaultValue": "#EDEDED",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingHeadingColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingHeadingFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingHeadingSize",
+      "defaultValue": "28",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingSubHeadingColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingSubHeadingFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingSubHeadingSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingTextColor",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingTextFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "paragraphImageLeftWithHeadingTextSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    }
+  ]
+}
+

@@ -1,0 +1,113 @@
+{
+	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": true,
+	"lockedAt": 0,
+	"attachmentName": "SocialCenter",
+	"labelList": [
+		"Social",
+		"Test"
+	],
+	"optionsLoader": [
+		"anchor",
+		"container",
+		"indentation"
+	],
+	"options": [
+	],
+	"translations": {
+		"heading": "Nadpis",
+		"socialLink": "Odkaz na soc. síť"
+	},
+	"elements": {
+		"defaultGroup": [
+			[
+				{
+					"elementType": "Heading",
+					"varName": "heading",
+					"defaults": {
+						"text": "Nadpis páté úrovně nad sociláními sítěmi",
+						"class": "small"
+					}
+				}
+			]
+		],
+		"socialGroup": [
+			[
+				{
+					"elementType": "IconButton",
+					"varName": "socialLink",
+					"defaults": {
+						"href": "https://instagram.com",
+						"text": "",
+						"title": "Odkaz na instagram",
+						"icon": "instagram"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "IconButton",
+					"varName": "socialLink",
+					"defaults": {
+						"href": "https://twitter.com",
+						"text": "",
+						"title": "Odkaz na Twitter",
+						"icon": "twitter"
+					}
+				}
+			],
+			[
+				{
+					"elementType": "IconButton",
+					"varName": "socialLink",
+					"defaults": {
+						"href": "https://facebook.com",
+						"text": "",
+						"title": "Odkaz na Facebook",
+						"icon": "facebook"
+					}
+				}
+			]
+		]
+	},
+	"lessVariable": [
+		{
+			"keyName": "socialCenterBodyBackgroundColor",
+			"defaultValue": "#EDEDED",
+			"type": "color"
+		},
+		{
+			"keyName": "socialCenterBlockBackgroundColor",
+			"defaultValue": "#EDEDED",
+			"type": "color"
+		},
+		{
+			"keyName": "socialCenterHeadingColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "socialCenterHeadingFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "socialCenterHeadingSize",
+			"defaultValue": "13",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "socialCenterIconColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "socialCenterIconSize",
+			"defaultValue": "16",
+			"type": "numeric",
+			"unit": "px"
+		}
+	]
+}
+

@@ -1,0 +1,87 @@
+{
+	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": true,
+	"lockedAt": 0,
+	"attachmentName": "MediaContentMap",
+	"labelList": [
+		"MediaContent",
+		"Contact",
+		"RES",
+		"Test"
+	],
+	"optionsLoader": [
+		"anchor",
+		"container",
+		"indentation",
+		"map"
+	],
+	"options": [
+	],
+	"translations": {
+	},
+	"elements": {
+		"defaultGroup": [
+			[
+			]
+		]
+	},
+	"lessVariable": [
+		{
+			"keyName": "mediaContentMapBodyBackground",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "mediaContentMapBodyBorderColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "mediaContentMapBodyBorderSize",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "mediaContentMapBodyBorderRadius",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "mediaContentMapBlockBorderColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "mediaContentMapBlockBorderSize",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "mediaContentMapBlockBorderRadius",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "mediaContentMapMapBorderColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "mediaContentMapMapBorderSize",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "mediaContentMapMapBorderRadius",
+			"defaultValue": "0",
+			"type": "numeric",
+			"unit": "px"
+		}
+	]
+}
+

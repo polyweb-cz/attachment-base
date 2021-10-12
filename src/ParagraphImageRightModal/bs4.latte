@@ -1,0 +1,50 @@
+{var $data = $values->{"polyweb-cz/base/ParagraphImageRightModal"}}
+
+{varType App\Modules\Cms\Entity\CmsImage $extensionData}
+{var $extensionData = $extension->getData('ImgId')[0]}
+
+<div class="row paragraphImageRightModal">
+    <div class="col-lg-7 col-md-6 col-sm-12 text-center p-5">
+        <h3 class="subHeading" n:editable n:varname="heading">{$text}</h3>
+        <p n:editable n:varname="perex">{$text}</p>
+        <br>
+        <a class="bigButton" data-toggle="modal" href="#modal">
+            <i class="fa fa-expand"></i>
+        </a>
+    </div>
+    <div class="col-lg-5 col-md-6 col-sm-12 text-center p-0">
+        <a class="lightbox_gallery_link" href="" data-lightbox="roadtrip" data-title="">
+            <picture>
+                <source media="(max-width:350px)"
+                        srcset="{$pathToRoot}{$extensionData->getThumbnail(4)->getFilePath()}">
+                <source media="(min-width:351px) and (max-width:576px)"
+                        srcset="{$pathToRoot}{$extensionData->getThumbnail(3)->getFilePath()}">
+                <source media="(min-width:577px) and (max-width:768px)"
+                        srcset="{$pathToRoot}{$extensionData->getThumbnail(2)->getFilePath()}">
+                <source media="(min-width:769px) and (max-width:992px)"
+                        srcset="{$pathToRoot}{$extensionData->getThumbnail(1)->getFilePath()}">
+                <source media="(min-width:993px) and (max-width:1200px)"
+                        srcset="{$pathToRoot}{$extensionData->getThumbnail(0)->getFilePath()}">
+
+                <img alt="" class="img-fluid" src="{$pathToRoot}{$extensionData->getThumbnail(0)->getFilePath()}">
+            </picture>
+        </a>
+    </div>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modalDialog">
+        <div class="modalContent">
+            <div class="modalHeader">
+                <h4 class="modalTitle" n:editable n:varname="headingModal">{$text}</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modalBody">
+                <p n:editable n:varname="perexModal">{$text}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{$extensionInput}
+{$optionsInput}

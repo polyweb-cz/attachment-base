@@ -1,0 +1,26 @@
+{var $data = $values->{"polyweb-cz/base/ParagraphImageRightFloat"}}
+
+{varType App\Modules\Cms\Entity\CmsImage $extensionData}
+{var $extensionData = $extension->getData('ImgId')[0]}
+
+<div class="row paragraphImageRightFloat">
+    <div class="col">
+        <picture>
+            <source media="(max-width:350px)" srcset="{$pathToRoot}{$extensionData->getThumbnail(4)->getFilePath()}">
+            <source media="(min-width:351px) and (max-width:576px)"
+                    srcset="{$pathToRoot}{$extensionData->getThumbnail(3)->getFilePath()}">
+            <source media="(min-width:577px) and (max-width:768px)"
+                    srcset="{$pathToRoot}{$extensionData->getThumbnail(2)->getFilePath()}">
+            <source media="(min-width:769px) and (max-width:992px)"
+                    srcset="{$pathToRoot}{$extensionData->getThumbnail(1)->getFilePath()}">
+            <source media="(min-width:993px) and (max-width:1200px)"
+                    srcset="{$pathToRoot}{$extensionData->getThumbnail(0)->getFilePath()}">
+
+            <img class="img-fluid" src="{$pathToRoot}{$extensionData->getThumbnail(0)->getFilePath()}">
+        </picture>
+        <p n:editable n:varname="perex">{$text}</p>
+    </div>
+</div>
+
+{$extensionInput}
+{$optionsInput}

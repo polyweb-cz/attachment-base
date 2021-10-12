@@ -1,0 +1,111 @@
+{
+	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": true,
+	"lockedAt": 0,
+	"attachmentName": "ParagraphImageRightWithHeading",
+	"extension": "SinglePicture",
+	"labelList": [
+		"Paragraph",
+		"Test"
+	],
+	"translations": {
+		"heading": "Nadpis",
+		"subHeading": "Podnadpis",
+		"perex": "Odstavec"
+	},
+	"optionsLoader": [
+		"anchor",
+		"container",
+		"indentation"
+	],
+	"options": [
+	],
+	"elements": {
+		"defaultGroup": [
+			[
+				{
+					"elementType": "Heading",
+					"varName": "heading",
+					"defaults": {
+						"text": "Nadpis tohoto prvku"
+					}
+				},
+				{
+					"elementType": "SingleLineEditor",
+					"varName": "subHeading",
+					"defaults": {
+						"text": "Podnadpis tohoto prvku"
+					}
+				},
+				{
+					"elementType": "Paragraph",
+					"varName": "perex",
+					"defaults": {
+						"text": "Lorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem\n\t\t\t\tLorem Lorem Lorem Lorem Lorem"
+					}
+				}
+			]
+		]
+	},
+	"lessVariable": [
+		{
+			"keyName": "paragraphImageRightWithHeadingBodyBackgroundColor",
+			"defaultValue": "#FFFFFF",
+			"type": "color"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingBlockBackgroundColor",
+			"defaultValue": "#EDEDED",
+			"type": "color"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingHeadingColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingHeadingFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingHeadingSize",
+			"defaultValue": "28",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingSubHeadingColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingSubHeadingFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingSubHeadingSize",
+			"defaultValue": "16",
+			"type": "numeric",
+			"unit": "px"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingTextColor",
+			"defaultValue": "#000",
+			"type": "color"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingTextFont",
+			"defaultValue": "Sans-serif",
+			"type": "font"
+		},
+		{
+			"keyName": "paragraphImageRightWithHeadingTextSize",
+			"defaultValue": "16",
+			"type": "numeric",
+			"unit": "px"
+		}
+	]
+}
+

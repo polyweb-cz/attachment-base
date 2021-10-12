@@ -1,0 +1,321 @@
+{
+  	"$schema": "../../../../Schema/sectionSchema.json",
+	"flutterReady": false,
+	"lockedAt": 0,
+  "attachmentName": "JumboCallAction",
+  "extension": "SinglePicture",
+  "labelList": [
+    "Test",
+    "RES",
+    "DEF",
+    "IMG"
+  ],
+  "translations": {
+    "headingText": "Nadpis první úrovně",
+    "subheadingText": "Text pod nadpisem",
+    "nad1": "Nadpis nad tlačítkem",
+    "nad2": "Tlačítko"
+  },
+  "optionsLoader": [
+    "anchor",
+    "container",
+    "indentation"
+  ],
+  "options": [
+    {
+      "name": "flip-sides",
+      "readable": "Prohození stran",
+      "type": "checkbox",
+      "prop": "class",
+      "value": "sides-flip",
+      "default": ""
+    }
+  ],
+  "elements": {
+    "defaultGroup": [
+      [
+        {
+          "varName": "headingText",
+          "elementType": "Heading",
+          "defaults": {
+            "text": "Co vše nabízíme ?"
+          }
+        },
+        {
+          "varName": "subheadingText",
+          "elementType": "Heading",
+          "defaults": {
+            "text": "Výpis služeb které nabízíme"
+          }
+        },
+        {
+          "varName": "mainPicture",
+          "elementType": "Picture",
+          "defaults": {
+            "alt": "Alternativní text",
+            "title": "Titulek obrázku",
+            "text": "notext"
+          }
+        }
+      ]
+    ],
+    "druhaGroup": [
+      [
+        {
+          "varName": "nad1",
+          "elementType": "Heading",
+          "defaults": {
+            "text": "Profi marketing"
+          }
+        },
+        {
+          "varName": "nad2",
+          "elementType": "Button",
+          "defaults": {
+            "text": "Více informací",
+            "href": "#"
+          }
+        }
+      ],
+      [
+        {
+          "varName": "nad1",
+          "elementType": "Heading",
+          "defaults": {
+            "text": "Webovky na zakázku"
+          }
+        },
+        {
+          "varName": "nad2",
+          "elementType": "Button",
+          "defaults": {
+            "text": "Více informací",
+            "href": "#"
+          }
+        }
+      ],
+      [
+        {
+          "varName": "nad1",
+          "elementType": "Heading",
+          "defaults": {
+            "text": "Serverové řešení"
+          }
+        },
+        {
+          "varName": "nad2",
+          "elementType": "Button",
+          "defaults": {
+            "text": "Více informací",
+            "href": "#"
+          }
+        }
+      ],
+      [
+        {
+          "varName": "nad1",
+          "elementType": "Heading",
+          "defaults": {
+            "text": "Doplňkové služby"
+          }
+        },
+        {
+          "varName": "nad2",
+          "elementType": "Button",
+          "defaults": {
+            "text": "Více informací",
+            "href": "#"
+          }
+        }
+      ]
+    ]
+  },
+  "lessVariable": [
+    {
+      "keyName": "jumboCallActionBodyBackgroundColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionBodyBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionBodyBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionBodyBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionJumboBackgroundColor",
+      "defaultValue": "#E9ECEF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionJumboBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionJumboBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionJumboBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionBlockBackgroundColor",
+      "defaultValue": "#E9ECEF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionBlockBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionBlockBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionBlockBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionHeading1Color",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionHeading1BorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionHeading1BorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionHeading1BorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionHeading1Font",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "jumboCallActionHeading1Size",
+      "defaultValue": "40",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionHeading2Color",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionHeading2Font",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "jumboCallActionHeading2Size",
+      "defaultValue": "32",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionHeading3Color",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionHeading3Font",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "jumboCallActionHeading3Size",
+      "defaultValue": "28",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionHeading4Color",
+      "defaultValue": "#000",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionHeading4Font",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "jumboCallActionHeading4Size",
+      "defaultValue": "13",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionButtonColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionButtonFont",
+      "defaultValue": "Sans-serif",
+      "type": "font"
+    },
+    {
+      "keyName": "jumboCallActionButtonSize",
+      "defaultValue": "16",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionButtonBorderColor",
+      "defaultValue": "#FFFFFF",
+      "type": "color"
+    },
+    {
+      "keyName": "jumboCallActionButtonBorderSize",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionButtonBorderRadius",
+      "defaultValue": "0",
+      "type": "numeric",
+      "unit": "px"
+    },
+    {
+      "keyName": "jumboCallActionButtonBackgroundColor",
+      "defaultValue": "#09C",
+      "type": "color"
+    }
+  ]
+}
+

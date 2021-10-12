@@ -1,0 +1,75 @@
+{if array_key_exists('polyweb-cz/base/MediaContentMap', get_object_vars($values))}
+    {var $data = $values->{"polyweb-cz/base/MediaContentMap"}}
+{else}
+    {var $data = new \stdClass}
+{/if}
+{var $defaults = [
+'zoom' => '10',
+'height' => '150',
+'mark_lat' => null,
+'mark_lon' => null,
+'center_lat' => 14.42076,
+'center_lon' => 50.08804,
+'mark_bubble_text' => null,
+'mark_bubble_heading' => "Headning",
+'mark_bubble_button' => null,
+'mark_bubble_link' => null,
+'map_type' => 1,
+'colorize'=> 0,
+'bubble_toggled'=> false,
+'overflow'=> false,
+'new_window'=> true
+]}
+{var $setDefaults = !array_key_exists('options', get_object_vars($data))}
+{if !$setDefaults}
+    {php
+        if (gettype($data->options) !== 'array') {
+        $data->options = json_decode(json_encode($data->options), true);
+        $setDefaults = false;
+        }
+        if (gettype($data->options) === 'array' && !array_key_exists('special', $data->options)) {
+        $setDefaults = true;
+        $data->options['special'] = [];
+        }
+        if (gettype($data->options['special']) === 'array') {
+        $setDefaults = !array_key_exists('map', $data->options['special']);
+        }
+    }
+{/if}
+{if $setDefaults}
+    {php
+        $data->options['special']['map'] = $defaults;
+    }
+
+{/if}
+{var $mapData = $data->options}
+{var $mapData1 = $mapData['special']}
+{var $mapData2 = $mapData1['map']}
+
+{php
+    foreach($defaults as $key => $value) {
+    if (!array_key_exists($key, $mapData2))
+    $mapData2[$key] = $value;
+    }
+}
+
+<div class="row mediaContentMap">
+    <div class="col">
+        <div style="height: {$mapData2['height']}px;" class="mediaContentMap_map" data-x="{$mapData2['center_lat']}"
+             data-y="{$mapData2['center_lon']}"
+             data-zoom="{$mapData2['zoom']}" data-mark-x="{$mapData2['mark_lat']}"
+             data-mark-y="{$mapData2['mark_lon']}"
+             data-mark-bubble-text="{$mapData2['mark_bubble_text']}"
+             data-mark-bubble-heading="{$mapData2['mark_bubble_heading']}"
+             data-mark-bubble-button="{$mapData2['mark_bubble_button']}"
+             data-mark-bubble-link="{$mapData2['mark_bubble_link']}"
+             data-map-type="{$mapData2['map_type']}"
+             data-colorize="{$mapData2['colorize']}"
+             data-bubble-toggled="{$mapData2['bubble_toggled']}"
+             data-overflow="{$mapData2['overflow']}"
+             data-new-window="{$mapData2['new_window']}"
+        ></div>
+    </div>
+</div>
+{$extensionInput}
+{$optionsInput}

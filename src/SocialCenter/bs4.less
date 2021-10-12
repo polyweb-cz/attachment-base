@@ -1,0 +1,54 @@
+& {
+
+
+  background: @socialCenterBodyBackgroundColor;
+
+
+  display: flex;
+
+  .row.socialCenter {
+    width: 100%;
+    background: @socialCenterBlockBackgroundColor;
+    flex-direction: column;
+    align-items: center;
+    place-items: center;
+    padding: 2em;
+    margin: 0;
+    gap: .5em;
+  }
+
+  h5 {
+    color: @socialCenterHeadingColor;
+    font-family: @socialCenterHeadingFont;
+    font-size: @socialCenterHeadingSize;
+
+    width: fit-content;
+  }
+
+  .socialCenter_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    > div {
+
+
+      a {
+
+        i {
+          color: @socialCenterIconColor;
+          font-size: @socialCenterIconSize;
+        }
+
+        span {
+          position: relative;
+
+        }
+      }
+
+    }
+  }
+}
+
+
+

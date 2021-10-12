@@ -1,0 +1,22 @@
+{var $data = $values->{"polyweb-cz/base/SimpleGalleryFocusing"}}
+
+{varType App\Modules\Cms\Entity\CmsImage[] $gallery}
+{var $gallery = $extension->getData('Gallery')}
+<div class="row simpleGallery">
+    {varType App\Modules\Cms\Entity\CmsImage $image}
+	{foreach $gallery as $image}
+        <div class="col p-1">
+            <a href="{$pathToRoot}{$image->getFilePath()}" data-lightbox="{$attachmentId}"
+               data-title="{$image->getTitle()}" class="cms-show-modal">
+                <picture class="img-fluid text-center" n:picture="xl, lg, md, sm, xs, lg"
+                         alt="{$image->getDescription()}" title="{$image->getTitle()}"
+                         data-image="$image">
+
+                </picture>
+            </a>
+        </div>
+    {/foreach}
+</div>
+
+{$extensionInput}
+{$optionsInput}

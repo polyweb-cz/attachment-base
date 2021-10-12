@@ -1,0 +1,19 @@
+{var $data = $values->{"polyweb-cz/base/SocialCenter"}}
+
+<div class="row socialCenter row-eq-height">
+    <h5 n:editable n:varname="heading">{$text}</h5>
+    <div class="socialCenter_wrapper" n:group="socialGroup">
+        {foreach $data->socialGroup as $item}
+            <div class="col" n:group-child>
+                <a n:classes="btn,btn-primary" n:varname="socialLink" target="_blank">
+                    {*					<i class="fab fa-{$icon}"></i>*}
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        {/foreach}
+    </div>
+</div>
+
+{$extensionInput}
+{$optionsInput}
+

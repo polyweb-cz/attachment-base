@@ -1,0 +1,50 @@
+&[data-extension="Menu"] {
+  &.attachment-block {
+    background: @menuVerticalBodyBackgroundColor;
+
+    padding: 1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .row {
+      background: @menuVerticalBlockBackgroundColor;
+
+      flex: 0 0 100%;
+
+      &:first-child {
+        > div {
+          padding: 2em 2em 0 2em;
+        }
+      }
+
+      &:nth-child(2) {
+        > div {
+          padding: 0 2em 2em 2em;
+        }
+      }
+
+      > div {
+
+
+        h4.small {
+          color: @menuVerticalHeadingColor;
+          font-family: @menuVerticalHeadingFont;
+          font-size: @menuVerticalHeadingSize;
+        }
+
+        ul {
+          li {
+            a {
+              color: @menuVerticalNavItemColor;
+              font-family: @menuVerticalNavItemFont;
+              font-size: @menuVerticalNavItemSize;
+              background: @menuVerticalNavItemBackgroundColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

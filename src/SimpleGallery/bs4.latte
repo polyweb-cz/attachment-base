@@ -1,0 +1,17 @@
+{var $data = $values->{"polyweb-cz/base/SimpleGallery"}}
+
+{varType App\Modules\Cms\Entity\CmsImage[] $gallery}
+{var $gallery = $extension->getData('Gallery')}
+
+<div class="row simpleGallery">
+    {foreach $gallery as $image}
+        <div class="col p-1">
+            <picture class="img-fluid text-center" n:picture="xl, lg, md, sm, xs, lg" alt="NoImage" data-image="$image">
+
+            </picture>
+        </div>
+    {/foreach}
+</div>
+
+{$extensionInput}
+{$optionsInput}

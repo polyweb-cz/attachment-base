@@ -1,0 +1,33 @@
+& {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+
+  background: @heading3SimpleBodyBackground;
+  border: @heading3SimpleBodyBorderSize solid @heading3SimpleBodyBorderColor;
+  border-radius: @heading3SimpleBodyBorderRadius;
+
+  .row.heading3Simple {
+    width: 100%;
+
+    > div {
+      background: @heading3SimpleBlockBackgroundColor;
+      border: @heading3SimpleBlockBorderSize solid @heading3SimpleBlockBorderColor;
+      border-radius: @heading3SimpleBlockBorderRadius;
+
+      h3 {
+        margin: 0;
+
+        background: @heading3SimpleHeadingBackgroundColor;
+        color: @heading3SimpleHeadingColor;
+        font-family: @heading3SimpleHeadingFont;
+        font-size: @heading3SimpleTextHeadingSize;
+        border: @heading3SimpleHeadingBorderSize solid @heading3SimpleHeadingBorderColor;
+        border-radius: @heading3SimpleHeadingBorderRadius;
+      }
+    }
+  }
+}
+
+
