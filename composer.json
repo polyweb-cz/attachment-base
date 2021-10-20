@@ -1,5 +1,17 @@
 {
   "name": "polyweb-cz/attachment-base",
   "description": "N/A",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "require": {
+    "php": ">=8.0",
+    "nette/di": "v3.0.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "PolyWeb\\AttachmentBase\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "classmap": ["src/"]
+  }
 }
