@@ -1,0 +1,4 @@
+services:
+    attachment_base:
+        class: PolyWeb\AttachmentBase\AttachmentBase
+        tags: [attachment]

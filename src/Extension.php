@@ -14,6 +14,8 @@ class Extension extends CompilerExtension
     {
         $builder = $this->getContainerBuilder();
         $builder->addDefinition($this->prefix(self::NAME))
-            ->setFactory(AttachmentBase::class);
+            ->setFactory(AttachmentBase::class)
+            ->addTag('attachment')
+        ;
     }
 }
