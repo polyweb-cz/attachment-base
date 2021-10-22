@@ -13,7 +13,7 @@
             {varType App\Modules\Cms\Entity\CmsMenuItem $menuItem}
 			{foreach $menu->getMenuItems() as $menuItem}
                 {continueIf $menuItem->getParent() !== null}
-                {if $menuItem->getChildren() !== null}
+                {if $menuItem->getChildren() !== null && !empty($menuItem->getChildren())}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                            aria-haspopup="true" aria-expanded="false"
@@ -28,7 +28,8 @@
 {*						</div>*}
                     </li>
                 {else}
-                    {if $menuItem->getRoute()->getPage() instanceof App\Modules\Cms\Entity\CmsPage}
+                    {dump $menuItem}
+                    {if $menuItem->getRoute() !== null}
                         <li class="nav-item">
                             <a class="nav-link {if onPage($menuItem)}active{/if}"
                                href="{menuLink($menuItem)}">{$menuItem->getName()}</a>
