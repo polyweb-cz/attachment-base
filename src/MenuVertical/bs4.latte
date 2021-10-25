@@ -28,7 +28,6 @@
 {*						</div>*}
                     </li>
                 {else}
-                    {dump $menuItem}
                     {if $menuItem->getRoute() !== null}
                         <li class="nav-item">
                             <a class="nav-link {if onPage($menuItem)}active{/if}"
